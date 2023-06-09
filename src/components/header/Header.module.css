@@ -1,0 +1,49 @@
+.container {
+  background-color: #d9d9d9;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  width: 80vw;
+}
+
+.title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 80vw;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .nav {
+    width: 95vw;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 28px;
+    padding: 24px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .title {
+    font-weight: 400;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illusCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.RulesCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height, or 131% */
+
+  text-align: center;
+
+  color: #4d6cb5;
+}
+
+.rulecon {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+
+  color: #4d6cb5;
+}
+
+.tickCon {
+  background: #4caf50;
+  border-radius: 50%;
+  padding: 2px;
+}

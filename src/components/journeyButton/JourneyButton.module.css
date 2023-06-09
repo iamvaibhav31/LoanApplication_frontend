@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  border: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #ffffff;
+  background: #274384;
+  border-radius: 4px;
+}

@@ -1,0 +1,40 @@
+.inputCon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.inputLabel {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.187px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #6f7482;
+}
+
+.input {
+  background: #f8fafc;
+  border-radius: 2.79675px;
+  border: none;
+  padding: 1rem;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.187px;
+  line-height: 150%;
+
+  letter-spacing: 0.01em;
+
+  color: #b8bcca;
+}
+
+.formGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formGroup > div {
+  width: 49%;
+}

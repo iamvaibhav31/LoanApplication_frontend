@@ -1,0 +1,27 @@
+.loans {
+  font-family: "Inter";
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+.loans td,
+.loans th {
+  padding: 8px;
+  text-decoration: none;
+}
+
+.loans tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.loans tr:hover {
+  background-color: #ddd;
+}
+
+.loans th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #04aa6d;
+  color: white;
+}

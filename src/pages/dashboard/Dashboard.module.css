@@ -1,0 +1,34 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.registerButtonCon {
+  width: 80vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.registerButton {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  /* line-height: 24px; */
+  border: none;
+  /* identical to box height, or 160% */
+  background: #abbeff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #000000;
+}
+
+.tableCon {
+  width: 80vw;
+}

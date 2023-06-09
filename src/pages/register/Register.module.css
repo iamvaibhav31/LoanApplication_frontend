@@ -1,0 +1,40 @@
+/* #F0F2F5 */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.title {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .title {
+    font-size: 80px;
+    line-height: 18px;
+  }
+}
