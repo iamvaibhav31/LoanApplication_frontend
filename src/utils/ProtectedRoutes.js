@@ -1,15 +1,11 @@
-import React from "react";
-import { Route, Redirect } from "react-router-dom";
+import { Route, useNavigate, Navigate, Outlet } from "react-router-dom";
+import nookies from "nookies";
 
-const ProtectedRoute = ({ component: Component, isAuthenticated, ...rest }) => {
-  return (
-    <Route
-      {...rest}
-      render={(props) =>
-        isAuthenticated ? <Component {...props} /> : <Redirect to="/login" />
-      }
-    />
-  );
+const ProtectedRoute = ({ element: Element, ...rest }) => {
+  const token = nookies.get().token;
+  const navigate = useNavigate();
+
+  return token ? <Outlet /> : <Navigate to={"/login"} replace />;
 };
 
 export default ProtectedRoute;
