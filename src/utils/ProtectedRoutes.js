@@ -1,9 +1,8 @@
-import { Route, useNavigate, Navigate, Outlet } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 import nookies from "nookies";
 
 const ProtectedRoute = ({ element: Element, ...rest }) => {
-  const token = nookies.get().token;
-  const navigate = useNavigate();
+  const token = nookies.get().authToken;
 
   return token ? <Outlet /> : <Navigate to={"/login"} replace />;
 };

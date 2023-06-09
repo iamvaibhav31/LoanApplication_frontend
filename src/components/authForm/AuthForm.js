@@ -3,8 +3,10 @@ import styles from "./AuthForm.module.css";
 import { Link } from "react-router-dom";
 import AuthFormValidate from "../../Validators/AuthFormvalidator";
 import useAuth from "../../hooks/useAuth";
+import { useNavigate } from "react-router-dom";
 const AuthForm = ({ action, name }) => {
-  const { LoginUsers, RegisterUsers } = useAuth();
+  const navigate = useNavigate();
+  const { LoginUsers, RegisterUsers, error } = useAuth();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -18,11 +20,18 @@ const AuthForm = ({ action, name }) => {
   const handleOnSubmit = () => {
     setFormError(AuthFormValidate(formData));
     if (Object.keys(formError).length === 0) {
+      console.log("AuthForm", error);
       if (action === "LOGIN") {
         LoginUsers(formData);
+        if (!error) {
+          navigate("/", { replace: true });
+        }
       }
       if (action === "REGISTER") {
         RegisterUsers(formData);
+        if (!error) {
+          navigate("/login", { replace: true });
+        }
       }
     }
   };
@@ -47,7 +56,7 @@ const AuthForm = ({ action, name }) => {
         className={styles.inputContainer}
         onChange={handelOnChange}
       />
-
+      <>{error}</>
       <div>
         <button
           type="submit"

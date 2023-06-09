@@ -9,13 +9,13 @@ const Provider = ({ children }) => {
 
   const LoginUsers = async (data) => {
     setLoading(true);
-    await Axios.post("/login", data)
+    await Axios.post("/users/login", data)
       .then((res) => {
         setCookie(null, "authToken", res.token, {
           maxAge: 90 * 24 * 60 * 60, // 90 days in seconds
           path: "/",
         });
-
+        console.log("LoginUsers", res);
         setError(undefined);
       })
       .catch((err) => {
@@ -30,8 +30,9 @@ const Provider = ({ children }) => {
 
   const RegisterUsers = async (data) => {
     setLoading(true);
-    await Axios.post("/register", data)
+    await Axios.post("/users/register", data)
       .then((res) => {
+        console.log("RegisterUsers", res);
         setError(undefined);
       })
       .catch((err) => {
