@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to Start the project 
+1. To setup your project run the command on CMD 
+### `npm init`
+
+
+2. To start the project run the commant on CMD 
+### `npm start`
+
+
 ## Available Scripts
 
 In the project directory, you can run:
