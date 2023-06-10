@@ -48,7 +48,9 @@ const LoanAggrement = () => {
               loanInterestPerMonth: Info3Data.loanInterestPerMonth,
             }),
           );
+             navigate("/journey/approved");
         } else {
+          navigate("/journey/rejected");
         }
       }}
     >
